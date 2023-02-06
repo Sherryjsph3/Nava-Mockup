@@ -17,9 +17,14 @@
 ![Design kit](/public/imgs/designkit.png)
 
 ### Working site
+
 #### Desktop
+
 ![Working Site Desktop](/public/imgs/workingsite.png)
-![Working Site Mobile](/public/imgs/workingsite.png)
+
+#### Mobile
+
+![Working Site Mobile](/public/imgs/workingsitemobile.png)
 
 ## `Getting Started`
 
