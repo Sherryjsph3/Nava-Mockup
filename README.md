@@ -14,7 +14,17 @@ that lists household members, based on the mockup below.
 
 Despite not being too familiar with the framework React I chose it because I want to become better at using it. Practice makes perfect. I remembered it being my favorite during bootcamp as well as the most challenging. I've spent the last year working with PHP so I wanted to refresh my skills with React. working with components.
 
-I aslo decided to work with the CMS design system since it's one of the libraries Nava uses often. I've briefly used Boostrap and SASS while working at my previus job and during my Bootcamp.
+I aslo decided to work with the CMS design system since it's one of the libraries Nava uses often and also because it works hand in hand with React.I've briefly used Boostrap and SASS while working at my previus job and during my Bootcamp.
+
+One of the requirements of the assignment was to have the ability to add a household memeber and the first way that came to mind was a form which was not included in the original mockup. I kept in mind having a label for each input field with an added placeholder for an additional que as to what must be entered within the field. I made it clear which fields needed to filled out by making each field requred. I also made sure the CTA's were clear just like 'Add new member'.
+
+### Questions for the design team as I was going through the Readme:
+
+1. Is there another way you would go about adding a new memeber?
+2. What would you change with in my form?
+3. Do you think it's necessary to add a title to the form or would you consider it repetitive?
+4. Would you add an \* even if each field is required, if not how else would you notate that each field was required?
+5. I added a hover state to buttons are you for this method or do you advise against it?
 
 ## `Technologies Used`
 
