@@ -10,8 +10,11 @@
 - [CMS design system](https://design.cms.gov/?theme=core)
 
 ## `Screenshots`
+
 ### Wireframe
-![Marketplace Mockup wireframe](public/imgs/When-in-Barcelona-wireframe.png)
+
+![Marketplace Mockup wireframe](public/imgs/marketplace-mockup.png)
 
 ## `Getting Started`
+
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ecfxjf)
