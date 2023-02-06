@@ -35,7 +35,7 @@ body {
   margin-top: 25px;
 }
 .tile-wrapper {
-  max-width: 520px;
+  max-width: 510px;
   flex-wrap: wrap;
   margin-left: 25px;
   display: flex;
@@ -46,7 +46,7 @@ body {
   border: 1.5px solid var(--color-gray-lighter);
   border-radius: 8px;
   padding: 23px 15px;
-  margin: 0 0 25px;
+  margin: 0 0 12px;
 }
 .tile:hover {
   box-shadow: 1px 1px 1px rgb(41, 41, 41, 0.6);
@@ -66,7 +66,7 @@ body {
 }
 .add-btn {
   background-color: var(--color-primary-darker);
-  margin: 0 0 0 25px;
+  margin: 13px 0 0 25px;
 }
 .add-btn:hover {
   background-color: var(--button__background-color--hover);
@@ -121,4 +121,10 @@ body {
   color: var(--color-black);
 }
 @media (max-width: 375px) {
+  .household-wrapper {
+    padding: 25px 25px 20px;
+  }
+  .household-text {
+    margin-top: 15px;
+  }
 }
