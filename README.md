@@ -1,5 +1,7 @@
 # Nava Mockup
+
 ## Prompt
+
 The Centers for Medicare and Medicaid (CMS) is the client. It's a large federal
 agency that provides health coverage to more than 100 million people through
 Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and the
@@ -8,7 +10,11 @@ healthcare.gov website, where millions of U.S. residents who need to purchase
 private health insurance can shop for and enroll in a plan.
 CMS has asked your team to roughly prototype a responsive Marketplace page
 that lists household members, based on the mockup below.
+![Actual Mockup Screenshot](/public/imgs/screenshotmockup.png)
 
+Despite not being too familiar with the framework React I chose it because I want to become better at using it. Practice makes perfect. I remembered it being my favorite during bootcamp as well as the most challenging. I've spent the last year working with PHP so I wanted to refresh my skills with React. working with components.
+
+I aslo decided to work with the CMS design system since it's one of the libraries Nava uses often. I've briefly used Boostrap and SASS while working at my previus job and during my Bootcamp.
 
 ## `Technologies Used`
 
@@ -16,8 +22,8 @@ that lists household members, based on the mockup below.
 - CSS3
 - JavaScript
 - React
-- [Invisionapp](https://www.invisionapp.com/inside-design/design-resources/do/)
 - [CMS design system](https://design.cms.gov/?theme=core)
+- [Invisionapp](https://www.invisionapp.com/inside-design/design-resources/do/)
 
 ## `Screenshots`
 

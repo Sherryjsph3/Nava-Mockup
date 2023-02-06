@@ -5,6 +5,8 @@
   "dependencies": {
     "@cmsgov/design-system": "^6.0.0",
     "@cmsgov/design-system-core": "^1.17.0",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
