@@ -13,7 +13,7 @@
 
 ### Wireframe
 
-![Marketplace Mockup wireframe](https://stackblitz.com/files/react-ecfxjf/github/Sherryjsph3/Nava-Mockup/main/public/marketplace_mockup.jpg)
+![Marketplace Mockup wireframe](/public/imgs/marketplace_mockup.jpg)
 ![Design kit](/public/imgs/designkit.png)
 
 ## `Getting Started`
