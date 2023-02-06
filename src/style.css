@@ -1,0 +1,124 @@
+body,
+h1,
+p {
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-black);
+  font-family: var(--font-family-open-sans);
+  font-weight: var(--font-weight-normal);
+}
+html,
+body {
+  margin: 0;
+}
+.header {
+  background-color: var(--color-primary-darkest);
+  width: 100%;
+  padding: 28px;
+  margin: 0 auto;
+}
+.headerText {
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+.household-wrapper {
+  padding: 45px 25px 20px;
+}
+.household-title {
+  font-weight: var(--font-weight-bold);
+  font-size: 25px;
+}
+.household-text {
+  font-size: 15px;
+  margin-top: 25px;
+}
+.tile-wrapper {
+  max-width: 520px;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.tile {
+  width: 250px;
+  border: 1.5px solid var(--color-gray-lighter);
+  border-radius: 8px;
+  padding: 23px 15px;
+  margin: 0 0 25px;
+}
+.tile:hover {
+  box-shadow: 1px 1px 1px rgb(41, 41, 41, 0.6);
+}
+.tile-name {
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 10px;
+}
+.tile-desc,
+.tile-favfruit {
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+}
+
+.tile-desc {
+  margin-bottom: 10px;
+}
+.add-btn {
+  background-color: var(--color-primary-darker);
+  margin: 0 0 0 25px;
+}
+.add-btn:hover {
+  background-color: var(--button__background-color--hover);
+  border: 1.5px solid var(--color-primary-darker);
+  color: var(--color-primary-darker);
+}
+.form-wrapper {
+  width: 220px;
+  margin: 50px auto;
+}
+.ds-c-label {
+  font-size: 12px;
+  color: var(--color-gray);
+  max-width: var(--form__max-width--medium);
+}
+.contact-field {
+  display: block;
+  margin: 10px auto 15px;
+  width: 220px;
+  border: 1px solid var(--color-gray-light);
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.contact-field::placeholder {
+  color: var(--color-gray-lighter);
+}
+.contact-field:hover {
+  box-shadow: 4px 6px 11px rgba(0, 0, 0, 0.07);
+}
+.list-btn {
+  background-color: var(--color-primary-darker);
+  margin: 25px auto 0;
+  display: block;
+}
+.list-btn:hover {
+  background-color: var(--button__background-color--hover);
+  border: 1.5px solid var(--color-primary-darker);
+  color: var(--color-primary-darker);
+}
+.close-btn {
+  color: var(--color-black);
+  margin: 10px auto 0;
+  display: block;
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  font-size: 15px;
+  text-align: center;
+}
+.close-btn:hover {
+  color: var(--color-black);
+}
+@media (max-width: 375px) {
+}
