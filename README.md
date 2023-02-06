@@ -13,7 +13,7 @@
 
 ### Wireframe
 
-![Marketplace Mockup wireframe](/public/imgs/marketplacewireframe.jpg)
+![Marketplace Mockup wireframe](/public/imgs/wireframe.png)
 ![Design kit](/public/imgs/designkit.png)
 
 ## `Getting Started`
