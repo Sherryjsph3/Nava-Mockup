@@ -1,4 +1,14 @@
 # Nava Mockup
+## Prompt
+The Centers for Medicare and Medicaid (CMS) is the client. It's a large federal
+agency that provides health coverage to more than 100 million people through
+Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and the
+Health Insurance Marketplace (healthcare.gov). CMS manages and operates the
+healthcare.gov website, where millions of U.S. residents who need to purchase
+private health insurance can shop for and enroll in a plan.
+CMS has asked your team to roughly prototype a responsive Marketplace page
+that lists household members, based on the mockup below.
+
 
 ## `Technologies Used`
 
