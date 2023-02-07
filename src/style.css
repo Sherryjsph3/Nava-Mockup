@@ -120,6 +120,13 @@ body {
 .close-btn:hover {
   color: var(--color-black);
 }
+.ds-c-button:focus {
+  webkit-box-shadow: 0 0 0 3px var(--color-focus-light),
+    0 0 4px 6px var(--color-focus-light);
+  box-shadow: 0 0 0 3px var(--color-focus-light),
+    0 0 4px 6px var(--color-focus-light);
+}
+
 @media (max-width: 375px) {
   .household-wrapper {
     padding: 25px 25px 20px;

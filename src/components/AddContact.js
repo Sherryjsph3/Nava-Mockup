@@ -4,21 +4,26 @@ import { FormLabel } from '@cmsgov/design-system-core';
 import { Button } from '@cmsgov/design-system-core';
 
 function AddContact(props) {
+  //state to hold showing and hiding the form
   const [showForm, setshowForm] = useState(false);
+
+  //state to hold the form data
   const [newForm, setNewForm] = useState({
     name: '',
     description: '',
     fruit: '',
   });
 
+  //handelechange function for the form
   const handleChange = (event) => {
     setNewForm({ ...newForm, [event.target.name]: event.target.value });
   };
 
+  //when the list member is clicked on the form
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    props.addMember(newForm);
+    props.addMember(newForm); //passed down the prop (addmember) from main.js
 
     setNewForm({
       name: '',
@@ -30,7 +35,7 @@ function AddContact(props) {
   return (
     <>
       <Button
-        onClick={() => setshowForm(true)}
+        onClick={() => setshowForm(true)} //we change the initialstate of the form to true
         className="add-btn"
         variation="solid"
       >
