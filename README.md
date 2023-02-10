@@ -2,21 +2,15 @@
 
 ## Prompt
 
-The Centers for Medicare and Medicaid (CMS) is the client. It's a large federal
-agency that provides health coverage to more than 100 million people through
-Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and the
-Health Insurance Marketplace (healthcare.gov). CMS manages and operates the
-healthcare.gov website, where millions of U.S. residents who need to purchase
-private health insurance can shop for and enroll in a plan.
-CMS has asked your team to roughly prototype a responsive Marketplace page
+The Centers for Medicare and Medicaid (CMS) is the client. It's a large federal agency that provides health coverage to more than 100 million people through Medicare, Medicaid, the Children's Health Insurance Program (CHIP), and the Health Insurance Marketplace (healthcare.gov). CMS manages and operates the healthcare.gov website, where millions of U.S. residents who need to purchase private health insurance can shop for and enroll in a plan. CMS has asked your team to roughly prototype a responsive Marketplace page
 that lists household members, based on the mockup below.
 ![Actual Mockup Screenshot](/public/imgs/screenshotmockup.png)
 
-Despite not being too familiar with the framework React I chose it because I want to become better at using it. Practice makes perfect. I remembered it being my favorite during bootcamp as well as the most challenging. I've spent the last year working with PHP so I wanted to refresh my skills with React. working with components.
+Despite not being too familiar with the framework React I chose it because I want to become better at using it. Practice makes perfect. During my bootcamp I found it to be the most interesting to me. I've spent the last year working with PHP so I wanted to refresh my skills with React and working with components.
 
-I aslo decided to work with the CMS design system since it's one of the libraries Nava uses often and also because it works hand in hand with React.I've briefly used Boostrap and SASS while working at my previus job and during my Bootcamp.
+I aslo decided to work with the CMS design system since it's one of the libraries Nava uses often and also because it works hand in hand with React. I've briefly used Boostrap and SASS while working at my previus job and during my Bootcamp.
 
-One of the requirements of the assignment was to have the ability to add a household memeber and the first way that came to mind was a form which was not included in the original mockup. I kept in mind having a label for each input field with an added placeholder for an additional que as to what must be entered within the field. I made it clear which fields needed to filled out by making each field requred. I also made sure the CTA's were clear just like 'Add new member'.
+One of the requirements of the assignment was to have the ability to add a household memeber and the first way that came to mind was with a form which was not included in the original mockup. I kept in mind having a label for each input field with an added placeholder for an additional cue as to what must be entered within the field. I made it clear which fields needed to filled out by making each field requred. I also made sure the CTA's were clear just like 'Add new member'.
 
 ### Questions for the design team as I was going through the Readme:
 
