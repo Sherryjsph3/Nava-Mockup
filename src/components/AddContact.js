@@ -1,8 +1,9 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FormLabel } from '@cmsgov/design-system-core';
 import { Button } from '@cmsgov/design-system-core';
 import SweetAlert2 from 'react-sweetalert2';
+import { $ } from 'react-jquery-plugin';
 
 function AddContact(props) {
   //state to hold showing and hiding the form
@@ -40,7 +41,21 @@ function AddContact(props) {
       title: 'Your household member has been added',
       icon: 'success',
     });
+
+    if (e.keyCode === 13) {
+      $('.list-btn').click();
+    }
   };
+
+  useEffect(() => {
+    const close = (e) => {
+      if (e.keyCode === 27) {
+        $('.close-btn').click();
+      }
+    };
+    window.addEventListener('keydown', close);
+    return () => window.removeEventListener('keydown', close);
+  }, []);
 
   return (
     <>

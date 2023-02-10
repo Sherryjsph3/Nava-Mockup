@@ -9,7 +9,8 @@
     "bootstrap": "5.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-sweetalert2": "^0.2.1",
+    "react-jquery-plugin": "^1.1.7",
+    "react-sweetalert2": "0.2.1",
     "sweetalert2": "11.7.1",
     "sweetalert2-react-content": "5.0.7"
   },
