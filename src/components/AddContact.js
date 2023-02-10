@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { FormLabel } from '@cmsgov/design-system-core';
 import { Button } from '@cmsgov/design-system-core';
+import SweetAlert2 from 'react-sweetalert2';
 
 function AddContact(props) {
   //state to hold showing and hiding the form
@@ -13,6 +14,9 @@ function AddContact(props) {
     description: '',
     fruit: '',
   });
+
+  //state to hold form success
+  const [swalMessage, setSwalMessage] = useState({});
 
   //handelechange function for the form
   const handleChange = (event) => {
@@ -29,6 +33,12 @@ function AddContact(props) {
       name: '',
       description: '',
       fruit: '',
+    });
+
+    setSwalMessage({
+      show: true,
+      title: 'Your household member has been added',
+      icon: 'success',
     });
   };
 
@@ -90,6 +100,8 @@ function AddContact(props) {
       ) : (
         ''
       )}
+
+      <SweetAlert2 {...swalMessage} />
     </>
   );
 }
