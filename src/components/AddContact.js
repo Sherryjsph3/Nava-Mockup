@@ -53,6 +53,7 @@ function AddContact(props) {
         $('.close-btn').click();
       }
     };
+
     window.addEventListener('keydown', close);
     return () => window.removeEventListener('keydown', close);
   }, []);

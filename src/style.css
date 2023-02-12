@@ -122,9 +122,8 @@ body {
 }
 .ds-c-button:focus {
   webkit-box-shadow: 0 0 0 3px var(--color-focus-light),
-    0 0 4px 6px var(--color-focus-light);
-  box-shadow: 0 0 0 3px var(--color-focus-light),
-    0 0 4px 6px var(--color-focus-light);
+    0 0 4px 6px var(--color-focus);
+  box-shadow: 0 0 0 3px var(--color-focus-light), 0 0 4px 6px var(--color-focus);
 }
 
 @media (max-width: 375px) {
