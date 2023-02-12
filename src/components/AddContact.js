@@ -2,8 +2,9 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { FormLabel } from '@cmsgov/design-system-core';
 import { Button } from '@cmsgov/design-system-core';
-import SweetAlert2 from 'react-sweetalert2';
 import { $ } from 'react-jquery-plugin';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
 function AddContact(props) {
   //state to hold showing and hiding the form
@@ -16,8 +17,11 @@ function AddContact(props) {
     fruit: '',
   });
 
-  //state to hold form success
-  const [swalMessage, setSwalMessage] = useState({});
+  // $(document).ready((e) => {
+  //   if (e.keyCode === 13) {
+  //     $('.add-btn').click();
+  //   }
+  // });
 
   //handelechange function for the form
   const handleChange = (event) => {
@@ -36,15 +40,14 @@ function AddContact(props) {
       fruit: '',
     });
 
-    setSwalMessage({
-      show: true,
+    const MySwal = withReactContent(Swal);
+
+    MySwal.fire({
       title: 'Your household member has been added',
       icon: 'success',
     });
 
-    if (e.keyCode === 13) {
-      $('.list-btn').click();
-    }
+    $('.close-btn').click();
   };
 
   useEffect(() => {
@@ -69,55 +72,60 @@ function AddContact(props) {
       </Button>
 
       {showForm ? (
-        <form onSubmit={handleSubmit}>
-          <div className="form-wrapper">
-            <FormLabel>Name:</FormLabel>
-            <input
-              className="contact-field"
-              type="text"
-              placeholder="Enter contact name"
-              value={newForm.name}
-              name="name"
-              onChange={handleChange}
-              required
-            />
-            <FormLabel>Description:</FormLabel>
-            <input
-              className="contact-field"
-              type="text"
-              placeholder="Enter description"
-              value={newForm.description}
-              name="description"
-              onChange={handleChange}
-              required
-            />
-            <FormLabel>Favorite Fruit:</FormLabel>
-            <input
-              className="contact-field"
-              type="text"
-              placeholder="Enter a favorite fruit"
-              value={newForm.fruit}
-              name="fruit"
-              onChange={handleChange}
-              required
-            />
-            <Button type="submit" className="list-btn" variation="solid">
-              List member
-            </Button>
-            <Button
-              onClick={() => setshowForm(false)}
-              className="close-btn"
-              variation="ghost"
-            >
-              Close
-            </Button>
-          </div>
-        </form>
+        <>
+          <form onSubmit={handleSubmit}>
+            <div className="form-wrapper">
+              <FormLabel>Name:</FormLabel>
+              <input
+                className="contact-field"
+                type="text"
+                placeholder="Enter contact name"
+                value={newForm.name}
+                name="name"
+                onChange={handleChange}
+                required
+              />
+              <FormLabel>Description:</FormLabel>
+              <input
+                className="contact-field"
+                type="text"
+                placeholder="Enter description"
+                value={newForm.description}
+                name="description"
+                onChange={handleChange}
+                required
+              />
+              <FormLabel>Favorite Fruit:</FormLabel>
+              <input
+                className="contact-field"
+                type="text"
+                placeholder="Enter a favorite fruit"
+                value={newForm.fruit}
+                name="fruit"
+                onChange={handleChange}
+                required
+              />
+              <Button
+                type="submit"
+                className="list-btn"
+                variation="solid"
+                // onClick={handleClick}
+              >
+                List member
+              </Button>
+              <Button
+                onClick={() => setshowForm(false)}
+                className="close-btn"
+                variation="ghost"
+              >
+                Close
+              </Button>
+            </div>
+          </form>
+        </>
       ) : (
         ''
       )}
-
-      <SweetAlert2 {...swalMessage} />
     </>
   );
 }
