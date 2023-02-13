@@ -12,16 +12,11 @@ function AddContact(props) {
 
   //state to hold the form data
   const [newForm, setNewForm] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     description: '',
-    fruit: '',
+    favoriteFruit: '',
   });
-
-  // $(document).ready((e) => {
-  //   if (e.keyCode === 13) {
-  //     $('.add-btn').click();
-  //   }
-  // });
 
   //handelechange function for the form
   const handleChange = (event) => {
@@ -35,9 +30,10 @@ function AddContact(props) {
     props.addMember(newForm); //passed down the prop (addmember) from main.js
 
     setNewForm({
-      name: '',
+      firstName: '',
+      lastName: '',
       description: '',
-      fruit: '',
+      favoriteFruit: '',
     });
 
     const MySwal = withReactContent(Swal);
@@ -75,13 +71,23 @@ function AddContact(props) {
         <>
           <form onSubmit={handleSubmit}>
             <div className="form-wrapper">
-              <FormLabel>Name:</FormLabel>
+              <FormLabel>First Name:</FormLabel>
               <input
                 className="contact-field"
                 type="text"
                 placeholder="Enter contact name"
-                value={newForm.name}
-                name="name"
+                value={newForm.firstName}
+                name="firstName"
+                onChange={handleChange}
+                required
+              />
+              <FormLabel>Last Name:</FormLabel>
+              <input
+                className="contact-field"
+                type="text"
+                placeholder="Enter contact name"
+                value={newForm.lastName}
+                name="lastName"
                 onChange={handleChange}
                 required
               />
@@ -100,8 +106,8 @@ function AddContact(props) {
                 className="contact-field"
                 type="text"
                 placeholder="Enter a favorite fruit"
-                value={newForm.fruit}
-                name="fruit"
+                value={newForm.favoriteFruit}
+                name="favoriteFruit"
                 onChange={handleChange}
                 required
               />

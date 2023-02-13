@@ -11,19 +11,32 @@ function Main() {
 
   const [members, setMembers] = useState([]);
 
-  const addMember = (member) => {
-    member.index = members.length + 1;
+  const url = `https://63d006cc8a780ae6e681fea9.mockapi.io/api/members`;
 
+  const addMember = async (member) => {
+    await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'Application/json',
+      },
+      body: JSON.stringify(member),
+    });
+
+    getContact();
+
+    member.index = members.length + 1;
+    setMembers([...members, member]);
   };
 
-  const url = `https://63d006cc8a780ae6e681fea9.mockapi.io/api/members`;
   const getContact = async () => {
     const response = await fetch(url);
     const data = await response.json();
     setMembers(data);
   };
 
-  useEffect(()=>{ getContact()}, []);
+  useEffect(() => {
+    getContact();
+  }, []);
 
   return (
     <>
