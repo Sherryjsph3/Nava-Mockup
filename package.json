@@ -11,6 +11,8 @@
     "react-dom": "18.2.0",
     "react-jquery-plugin": "^1.1.7",
     "react-sweetalert2": "0.2.1",
+    "svg-loaders": "^0.2.0",
+    "svg-loaders-react": "^2.2.1",
     "sweetalert2": "11.7.1",
     "sweetalert2-react-content": "5.0.7"
   },
